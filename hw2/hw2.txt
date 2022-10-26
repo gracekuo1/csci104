@@ -1,0 +1,21 @@
+Problem 1
+a) untracked, you’re just cloning the files and it exists on branch master
+b) fun_problem.txt: untracked, as you’re just creating an empty, README.md: untracked, appending something at the end of README.md
+c) staged 
+d) modified, the files are just staged, and committed. Once you modify, it becomes modified
+e) So far, so good,  not added or committed, unmodified
+f) unmodified 
+
+Problem 2
+a) tab
+b) running make clean : "rm -f *.o *~ shape1 shape2 *~" will get called 
+running make shape1: $(CXX) $(CXXFLAGS) $^ -o $@ $(LIBS)
+d) .PHONY : makes sure that if clean’ exists in our directory. make will still run run the clean 
+rule even though it sees that the file already exists.
+e) 2,4
+
+Problem 4
+1. list of steps (strings), since order matters
+2. set of TV station identifications (strings), to quickly get rid of duplicates 
+3. map with player name (string) as key and player team (string) as value 
+4. map with file extension (string) as key and value as a set of possible programs (strings)
